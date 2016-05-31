@@ -28,7 +28,7 @@ export default function({posts}) {
     </head>
     <body>
       <header>
-        <img src='/public/Photos/doodlelogo.png' />
+        <img src='/DoodleADayBlog/public/Photos/doodlelogo.png' />
         <h1>2016 Challenge</h1>
         <h2>All Doodles By Heather van der Dys</h2>
       </header>
