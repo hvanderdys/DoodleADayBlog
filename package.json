@@ -1,6 +1,6 @@
 {
   "name": "blog-v2",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Blog of Doodles",
   "main": "index.js",
   "scripts": {
