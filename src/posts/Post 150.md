@@ -6,6 +6,6 @@ date: 5/30/16
 featuredImage: /Public/Photos/doodle150.jpg
 ---
 
-![Doodle #150](/Public/Photos/doodle150.jpg)
+![Doodle #150](/public/Photos/doodle150.jpg)
 
 **Faded Glory** | *Watercolor* | Heather van der Dys  | May 30, 2016
