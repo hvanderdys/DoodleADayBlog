@@ -1,0 +1,6 @@
+{
+  "verbose": true,
+  "watch": ["src", "modules"],
+  "ext": "js json md scss",
+  "exec": "npm run build && npm start && npm run server"
+}

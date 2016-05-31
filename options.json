@@ -1,0 +1,26 @@
+{
+  "react": {
+    "pattern": "**/*.html",
+    "templatesPath": "modules-dist",
+    "defaultTemplate": "post",
+    "before": "<!doctype html>\n",
+    "reactRender": "renderToStaticMarkup"
+  },
+  "collection": {
+    "posts": {
+      "pattern": "posts/*.md",
+      "reverse": true,
+      "sortBy": "date"
+    }
+  },
+  "snippet": {
+    "maxLength": 200
+  },
+  "sass": {
+    "outputDir": "css/"
+  },
+  "markdown": {
+    "html": true,
+    "linkify": true
+  }
+}

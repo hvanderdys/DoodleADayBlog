@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,300);
+
+@import 'mixins';
+@import 'vars';
+
+body {
+  margin: 0px;
+  font-family: 'Raleway', serif;
+  background: $blue;
+  color: $white;
+  line-height: 24px;
+}
+header {
+  padding: 1.5%;
+  background-image: url(/public/Photos/DoodlesHeader.jpg);
+  background-size: 100%;
+  text-align: center;
+  position: relative;
+  h1 {
+    color: $white;
+  }
+  .back {
+    color: $white;
+    text-decoration: none;
+    font-size: 20px;
+    @include tablet {
+      position: absolute;
+      top: 42%;
+      left: 60px;
+    }
+    @include desktop {
+      position: absolute;
+      top: 42%;
+      left: 60px;
+    }
+  }
+}
+a {
+  color: $yellow;
+}
+time {
+  display: block;
+  margin: 10px;
+  @include tablet {
+    margin: 60px;
+  }
+  @include desktop {
+    margin: 60px;
+  }
+  font-size: 1rem;
+  color: $white;
+  font-weight: bold;
+}
+article {
+  margin: 10px;
+  @include tablet {
+    margin: 60px;
+  }
+  @include desktop {
+    margin: 60px;
+  }
+}
+pre {
+  background-color: #3e3e3e;
+  padding: 10px;
+  word-wrap: break-word;
+}
+
+img {
+  width: 100%;
+}

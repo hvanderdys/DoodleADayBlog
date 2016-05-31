@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,300);
+
+@import 'mixins';
+@import 'vars';
+
+body {
+  margin: 0;
+  font-family: 'Raleway', serif;
+  background: $blue;
+  height: 100%;
+  line-height: 24px;
+}
+header {
+  padding: 5%;
+  background-image: url(/public/Photos/DoodlesHeader.jpg);
+  background-size: 100%;
+  text-align: center;
+  img {
+    height: 120px;
+  }
+  @include desktop {
+    img {
+      width: auto;
+      height: 192px;
+    }
+  }
+  @include tablet {
+    img {
+      width: auto;
+      height: 192px;
+    }
+  }
+}
+.posts {
+  margin: 20px;
+  position: relative;
+  height: 100%;
+  @include desktop {
+    &::before {
+      content: '';
+      border: 1px solid $white;
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      top: 0;
+    }
+    &::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+}
+h1,
+h2 {
+  font-family: 'Raleway', sans-serif;
+  color: $white;
+  margin: 0;
+  line-height: 32px;
+}
+h1 {
+  color: $lightblue;
+  font-size: 2em;
+  margin: 20px 0;
+  span {
+    display: block;
+  }
+  @include desktop {
+    span {
+      display: inline;
+    }
+  }
+  @include tablet {
+    span {
+      display: inline;
+    }
+  }
+}
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: $red;
+}
+p {
+  line-height: 1.618;
+  font-size: 1.2rem;
+  color: $gray;
+}
+.post {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: $white;
+  @include desktop {
+    width: 44%;
+    clear: both;
+    &:nth-of-type(2n) {
+      float: left;
+      &::before {
+        //#triangle-right {
+        //	width: 100;
+        //	height: 100;
+        //	border-top: 50px solid transparent;
+        //	border-right: 100px solid red;
+        //	border-bottom: 50px solid transparent;
+        //}
+
+        content: '>';
+        position: absolute;
+        right: -13px;
+        font-size: 30px;
+        color: $white;
+        top: 10px;
+      }
+    }
+    &:nth-of-type(2n+1) {
+      float: right;
+      &::before {
+        //#triangle-left {
+        //	width: 100;
+        //	height: 100;
+        //	border-top: 50px solid transparent;
+        //	border-right: 100px solid red;
+        //	border-bottom: 50px solid transparent;
+        //}
+
+        content: '<';
+        position: absolute;
+        left: -13px;
+        font-size: 30px;
+        color: $white;
+        top: 10px;
+      }
+    }
+  }
+  h2 {
+    color: $red;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+  }
+  time {
+    display: block;
+    margin: 10px 0;
+    font-size: 1rem;
+    color: $blue;
+  }
+  .featured-image{
+    width:100%;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,4 @@
+---
+template: index
+index: true
+---
